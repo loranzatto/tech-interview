@@ -1,45 +1,35 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+## Loranzatto's Append
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+System Specification
+OS: Windows Pro 10 64 bit
+Microsoft .NET Framework: 4.7
+VS 2017 Version: 15.7.6
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+I've cloned whole tech-interview project and made an adapt in it to be included in a C# .NET Console Application.
 
----
+Now in this repository we have a C# .NET Console Application solution (.sln) with two projects:
+- tech-interview;
+- tech-interview_TestProject;
 
-## Edit a file
+Steps to Execute our Console Application:
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+By Generated Exe
+1. After clone this repository to your computer go to the bin folder (tech-interview\tech-interview\bin\Debug);
+2. Change the file path that should be read and write JSON Files in ConsoleApplication.exe.config to one in your own computer;
+3. Execute ConsoleApplication.exe file and the logic will be processed:
+   - Read the data.json;
+   - Execute the proposed logic;
+   - Write the results into the output.json;
+4. The logic will update the already existing output.json file within each level folder (backend -> Level1 , Level2 and Level3);
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+By VS 2017 IDE
+1. After clone this repository to your computer open the solution (.sln) in VS 2017 IDE;
+2. Change the file path that should be read and write JSON Files in App.config to one in your own computer;
+3. Clean and Rebuild the solution;
+4. Start the application execution and the steps detailed in the topic above (3 and 4) will be the same;
 
----
+Steps to Execute our Unit Test Application:
 
-## Create a file
-
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+1. After clone this repository to your computer open the solution (.sln) in VS 2017 IDE;
+2. Go to the Test -> Run -> All Tests and the test project will be executed;
+3. Check the resu;ts at the unit test tab view;
