@@ -1,0 +1,184 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{60249F6E-51B3-441A-A4A7-771E1661B01B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>tech_interview</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.11.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="android\fonts\Montserrat-Black.otf" />
+    <None Include="android\fonts\Montserrat-Bold.otf" />
+    <None Include="android\fonts\Montserrat-ExtraBold.otf" />
+    <None Include="android\fonts\Montserrat-ExtraLight.otf" />
+    <None Include="android\fonts\Montserrat-Light.otf" />
+    <None Include="android\fonts\Montserrat-Medium.otf" />
+    <None Include="android\fonts\Montserrat-Regular.otf" />
+    <None Include="android\fonts\Montserrat-SemiBold.otf" />
+    <None Include="android\fonts\Montserrat-Thin.otf" />
+    <None Include="android\fonts\MontserratAlternates-Black.otf" />
+    <None Include="android\fonts\MontserratAlternates-Bold.otf" />
+    <None Include="android\fonts\MontserratAlternates-ExtraBold.otf" />
+    <None Include="android\fonts\MontserratAlternates-ExtraLight.otf" />
+    <None Include="android\fonts\MontserratAlternates-Light.otf" />
+    <None Include="android\fonts\MontserratAlternates-Medium.otf" />
+    <None Include="android\fonts\MontserratAlternates-Regular.otf" />
+    <None Include="android\fonts\MontserratAlternates-SemiBold.otf" />
+    <None Include="android\fonts\MontserratAlternates-Thin.otf" />
+    <None Include="android\layout\joyjet-apptest.pdf" />
+    <None Include="android\layout\joyjet-apptest.sketch" />
+    <None Include="android\README.md" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="backend\level1\data.json" />
+    <None Include="backend\level1\output.json" />
+    <None Include="backend\level1\README.md" />
+    <None Include="backend\level2\data.json" />
+    <None Include="backend\level2\output.json" />
+    <None Include="backend\level2\README.md" />
+    <None Include="backend\level3\data.json" />
+    <None Include="backend\level3\output.json" />
+    <None Include="backend\level3\README.md" />
+    <None Include="frontend\README.md" />
+    <None Include="ios\fonts\Montserrat-Black.otf" />
+    <None Include="ios\fonts\Montserrat-Bold.otf" />
+    <None Include="ios\fonts\Montserrat-ExtraBold.otf" />
+    <None Include="ios\fonts\Montserrat-ExtraLight.otf" />
+    <None Include="ios\fonts\Montserrat-Light.otf" />
+    <None Include="ios\fonts\Montserrat-Medium.otf" />
+    <None Include="ios\fonts\Montserrat-Regular.otf" />
+    <None Include="ios\fonts\Montserrat-SemiBold.otf" />
+    <None Include="ios\fonts\Montserrat-Thin.otf" />
+    <None Include="ios\fonts\MontserratAlternates-Black.otf" />
+    <None Include="ios\fonts\MontserratAlternates-Bold.otf" />
+    <None Include="ios\fonts\MontserratAlternates-ExtraBold.otf" />
+    <None Include="ios\fonts\MontserratAlternates-ExtraLight.otf" />
+    <None Include="ios\fonts\MontserratAlternates-Light.otf" />
+    <None Include="ios\fonts\MontserratAlternates-Medium.otf" />
+    <None Include="ios\fonts\MontserratAlternates-Regular.otf" />
+    <None Include="ios\fonts\MontserratAlternates-SemiBold.otf" />
+    <None Include="ios\fonts\MontserratAlternates-Thin.otf" />
+    <None Include="ios\layout\joyjet-apptest-ios.pdf" />
+    <None Include="ios\layout\joyjet-apptest-ios.sketch" />
+    <None Include="ios\README.md" />
+    <None Include="packages.config" />
+    <None Include="README.md" />
+    <None Include="webdesign\layout\joyjet-recruitment-web.pdf" />
+    <None Include="webdesign\layout\joyjet-recruitment-web.sketch" />
+    <None Include="webdesign\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="android\App Diagram.png" />
+    <Content Include="android\assets\hdpi\arrow_left.png" />
+    <Content Include="android\assets\hdpi\arrow_right.png" />
+    <Content Include="android\assets\hdpi\ic_back.png" />
+    <Content Include="android\assets\hdpi\ic_joyjet.png" />
+    <Content Include="android\assets\hdpi\ic_menu.png" />
+    <Content Include="android\assets\hdpi\ic_star.png" />
+    <Content Include="android\assets\mdpi\arrow_left.png" />
+    <Content Include="android\assets\mdpi\arrow_right.png" />
+    <Content Include="android\assets\mdpi\ic_back.png" />
+    <Content Include="android\assets\mdpi\ic_joyjet.png" />
+    <Content Include="android\assets\mdpi\ic_menu.png" />
+    <Content Include="android\assets\mdpi\ic_star.png" />
+    <Content Include="android\assets\xhdpi\arrow_left.png" />
+    <Content Include="android\assets\xhdpi\arrow_right.png" />
+    <Content Include="android\assets\xhdpi\ic_back.png" />
+    <Content Include="android\assets\xhdpi\ic_joyjet.png" />
+    <Content Include="android\assets\xhdpi\ic_menu.png" />
+    <Content Include="android\assets\xhdpi\ic_star.png" />
+    <Content Include="android\assets\xxhdpi\arrow_left.png" />
+    <Content Include="android\assets\xxhdpi\arrow_right.png" />
+    <Content Include="android\assets\xxhdpi\ic_back.png" />
+    <Content Include="android\assets\xxhdpi\ic_joyjet.png" />
+    <Content Include="android\assets\xxhdpi\ic_menu.png" />
+    <Content Include="android\assets\xxhdpi\ic_star.png" />
+    <Content Include="android\assets\xxxhdpi\arrow_left.png" />
+    <Content Include="android\assets\xxxhdpi\arrow_right.png" />
+    <Content Include="android\assets\xxxhdpi\ic_back.png" />
+    <Content Include="android\assets\xxxhdpi\ic_joyjet.png" />
+    <Content Include="android\assets\xxxhdpi\ic_menu.png" />
+    <Content Include="android\assets\xxxhdpi\ic_star.png" />
+    <Content Include="android\fonts\SIL Open Font License.txt" />
+    <Content Include="ios\App Diagram.png" />
+    <Content Include="ios\assets\arrow_left copy%402x.png" />
+    <Content Include="ios\assets\arrow_left copy%403x.png" />
+    <Content Include="ios\assets\arrow_left copy.png" />
+    <Content Include="ios\assets\arrow_right copy%402x.png" />
+    <Content Include="ios\assets\arrow_right copy%403x.png" />
+    <Content Include="ios\assets\arrow_right copy.png" />
+    <Content Include="ios\assets\ic_back%402x.png" />
+    <Content Include="ios\assets\ic_back%403x.png" />
+    <Content Include="ios\assets\ic_back.png" />
+    <Content Include="ios\assets\ic_joyjet%402x.png" />
+    <Content Include="ios\assets\ic_joyjet%403x.png" />
+    <Content Include="ios\assets\ic_joyjet.png" />
+    <Content Include="ios\assets\ic_menu%402x.png" />
+    <Content Include="ios\assets\ic_menu%403x.png" />
+    <Content Include="ios\assets\ic_menu.png" />
+    <Content Include="ios\assets\ic_star%402x.png" />
+    <Content Include="ios\assets\ic_star%403x.png" />
+    <Content Include="ios\assets\ic_star.png" />
+    <Content Include="ios\fonts\SIL Open Font License.txt" />
+    <Content Include="webdesign\images\43688.jpg" />
+    <Content Include="webdesign\images\43690.jpg" />
+    <Content Include="webdesign\images\43698.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="backend\Model\Articles.cs" />
+    <Compile Include="backend\Model\Carts.cs" />
+    <Compile Include="backend\Model\DataRepository.cs" />
+    <Compile Include="backend\Model\DeliveryFees.cs" />
+    <Compile Include="backend\Model\Discounts.cs" />
+    <Compile Include="backend\Model\EligibleTransactionVolume.cs" />
+    <Compile Include="backend\Model\IDataRepository.cs" />
+    <Compile Include="backend\Model\Items.cs" />
+    <Compile Include="backend\Model\Root.cs" />
+    <Compile Include="backend\Program.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
